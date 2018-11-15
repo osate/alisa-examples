@@ -20,9 +20,9 @@ verification plan scsvplan for scsreqs
 //	]
 
 claim R3  [
-	activities
-		hasvoltage: Alisa_Consistency.ConsistentVoltage(volts)
-		consistentvoltage: actualvolt = Alisa_Consistency.GetVoltage()
-		matchvoltage: actualvolt = Alisa_Consistency.SetGetVoltage()property values (volts)
+//	activities
+//		hasvoltage: Alisa_Consistency.ConsistentVoltage(volts)
+//		consistentvoltage: actualvolt = Alisa_Consistency.GetVoltage()
+//		matchvoltage: actualvolt = Alisa_Consistency.SetGetVoltage()property values (volts)
 	]
 ] 
