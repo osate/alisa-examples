@@ -2,8 +2,8 @@
 // Distribution Statement A: Approved for Public Release; Distribution is Unlimited.
 verification methods Python [
 
-	method DoCount () returns ( count : integer) : "Count model elements" [
-		python SimpleControlSystem.Python.modelstatistics2
-	]
+//	method DoCount () returns ( count : integer) : "Count model elements" [
+//		python SimpleControlSystem.Python.modelstatistics2
+//	]
 
 ]

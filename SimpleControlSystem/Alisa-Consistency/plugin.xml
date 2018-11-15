@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?eclipse version="3.4"?>
 <plugin>
-   <extension
+   <!--extension
          point="org.osate.pluginsupport.registeredjavaclasses">
       <class
             path="alisa_consistency.ModelConditions">
@@ -9,6 +9,6 @@
       <class
             path="alisa_consistency.ModelVerifications">
       </class>
-   </extension>
+   </extension-->
 
 </plugin>

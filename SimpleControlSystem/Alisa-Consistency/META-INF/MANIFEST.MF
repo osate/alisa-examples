@@ -7,4 +7,7 @@ Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ActivationPolicy: lazy
 Export-Package: alisa_consistency
 Automatic-Module-Name: org.osate.alisa.Alisa-Consistency
-Require-Bundle: org.osate.pluginsupport;bundle-version="1.0.0"
+Require-Bundle: org.osate.pluginsupport;bundle-version="1.0.0",
+ org.osate.aadl2;bundle-version="1.0.0",
+ org.osate.xtext.aadl2.properties;bundle-version="1.0.0",
+ org.osate.results;bundle-version="1.0.0"

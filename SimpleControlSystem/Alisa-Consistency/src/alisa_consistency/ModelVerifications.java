@@ -51,7 +51,7 @@ public class ModelVerifications {
 
 	/**
 	 * Recursively consistency check that all leaf components have all features
-	 * connected. Retruns Result object with issues detailing each unconnected feature.
+	 * connected. Returns Result object with issues detailing each unconnected feature.
 	 */
 //	public static AnalysisResult allComponentFeaturesConnected(ComponentInstance ci) {
 //		AnalysisResult res = ResultFactory.eINSTANCE.createResult();
@@ -62,11 +62,15 @@ public class ModelVerifications {
 			if (isLeafComponent(subi)) {
 				for (FeatureInstance fi : subi.getAllFeatureInstances()) {
 					if (!isConnected(fi)) {
-						Result issue = ResultUtil.createFailureResult(
+						Diagnostic diag = ResultUtil.createFailure(
 							"Feature " + fi.getName() + " of component "
 							+ fi.getContainingComponentInstance().getName()
 							+ " not connected",
 								fi);
+						Result issue = ResultUtil.createResult("Feature " + fi.getName() + " of component "
+								+ fi.getContainingComponentInstance().getName()
+								+ " not connected", fi);
+						issue.getDiagnostics().add(diag);
 						res.getSubResults().add(issue);
 					}
 				}

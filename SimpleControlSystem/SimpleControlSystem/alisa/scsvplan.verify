@@ -4,7 +4,7 @@ verification plan scsvplan for scsreqs
 [
 	claim R1 [
 		activities
-			actualsystemweight : Plugins.ComponentMassAnalysis() 
+			actualsystemweight : Plugins.MassAnalysis() 
 			   [ category Quality.Mass ]
 			MaxWeight : Resolute.verifyAllWeights(MaximumWeight in kg) [ category Quality.Mass ]
 			SCSReq1act : Resolute.verifySCSReq1(MaximumWeight in kg) [ category Quality.Mass ]
@@ -21,7 +21,7 @@ verification plan scsvplan for scsreqs
 
 claim R3  [
 	activities
-		hasvoltage: Alisa_Consistency.ConsistentVoltage(volts)
+//		hasvoltage: Alisa_Consistency.ConsistentVoltage(volts)
 		consistentvoltage: actualvolt = Alisa_Consistency.GetVoltage()
 		matchvoltage: actualvolt = Alisa_Consistency.SetGetVoltage()property values (volts)
 	]
