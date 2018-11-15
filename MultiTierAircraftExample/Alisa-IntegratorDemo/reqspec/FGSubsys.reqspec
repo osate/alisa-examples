@@ -32,6 +32,6 @@ val FGS_FlowPathLatency =  [3.0 ms..3.0ms]
 			from the Flight Controls Panel subsystem to the Autopilots 
 			shall not exceed "
 			FGS_FlowPathLatency
-		value predicate #Latency == FGS_FlowPathLatency
+		// value predicate #Latency == FGS_FlowPathLatency
 	]
 ]

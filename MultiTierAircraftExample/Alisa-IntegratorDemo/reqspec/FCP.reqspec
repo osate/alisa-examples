@@ -50,11 +50,11 @@ use constants Globals
 			FCP_ROMBudget
 	]
 
-	requirement R4 : "Flow Path Latency" for fYokesToFGS1[
+	requirement R4 : "Flow Path Latency" [
 		description "The flow path latency to the yokes of the FCP subsystem 
 			shall not exceed " 
 			FCP_FlowPathLatency
-		value predicate #Latency == FCP_FlowPathLatency
+		// value predicate #Latency == FCP_FlowPathLatency
 	]
 
 ]

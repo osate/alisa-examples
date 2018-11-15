@@ -11,11 +11,11 @@ verification plan NSWVplan for NSW [
 			powerbudget: Plugins.ElectricalPower()
 	]
 	claim NSW.R3_1 [
-		activities
-			InternallySelfSufficient: AircraftExampleRegistry.NoExternalCPUDemand()
+//		activities
+//			InternallySelfSufficient: AircraftExampleRegistry.NoExternalCPUDemand()
 	]
 	claim NSW.R3_2 [
-		activities
-			ExternallySelfSufficient: AircraftExampleRegistry.NoCPUCapacityForOthers()
+//		activities
+//			ExternallySelfSufficient: AircraftExampleRegistry.NoCPUCapacityForOthers()
 	]
 ]

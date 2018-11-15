@@ -30,11 +30,11 @@ val AP_FlowPathLatency =  [3.0 ms..3.0ms]
 			AP_ROMBudget
 	]
 
-	requirement R3: "Flow Path Latency" for fAPCLAWS1[
+	requirement R3: "Flow Path Latency" [
 		description "The transit time through the AP subsystem for the flow path
 			from the FGS subsystem to the Surface Control System servos
 			shall not exceed "
 			AP_FlowPathLatency
-		value predicate #Latency == AP_FlowPathLatency
+		// value predicate #Latency == AP_FlowPathLatency
 	]
 ]

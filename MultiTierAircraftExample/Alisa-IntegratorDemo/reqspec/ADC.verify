@@ -14,13 +14,13 @@ verification plan ADCVplan for ADC
 	]
 
 	claim R3_1 [
-		activities
-			InternallySelfSufficient: AircraftExampleRegistry.NoExternalCPUDemand()
+//		activities
+//			InternallySelfSufficient: AircraftExampleRegistry.NoExternalCPUDemand()
 	]
 
 	claim R3_2 [
-		activities
-			ExternallySelfSufficient: AircraftExampleRegistry.NoCPUCapacityForOthers()
+//		activities
+//			ExternallySelfSufficient: AircraftExampleRegistry.NoCPUCapacityForOthers()
 	]
 
 ]

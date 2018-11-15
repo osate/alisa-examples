@@ -12,6 +12,6 @@ verification plan AircraftPlan for Aircraft
 		// conduct mass analysis on the top three levels of the aircraft system (tiers 0, 1, and 2)
 			weightlimit2 : Plugins.ComponentMassAnalysis() [category Layer.Tier2 ]
 
-			weightconsistency: AircraftExampleRegistry.ConsistentWeightLimit(Aircraft_MaxWeight)
+//			weightconsistency: AircraftExampleRegistry.ConsistentWeightLimit(Aircraft_MaxWeight)
 	]
 ]
