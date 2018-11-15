@@ -5,7 +5,7 @@ verification plan ELEPlan for ELE
 
 	claim ELE.R1 [
 		activities
-			weightlimit: Plugins.ComponentMassAnalysis()
+			weightlimit: Plugins.MassAnalysis()
 	]
 
 	claim ELE.R2 [

@@ -5,7 +5,7 @@ verification plan AHRS_HWPlan for AHRS_HW
 	
 	claim AHRS_HW.R1  [
 		activities
-			weightlimit: Plugins.ComponentMassAnalysis()
+			weightlimit: Plugins.MassAnalysis()
 	]
 
 	claim AHRS_HW.R2  [

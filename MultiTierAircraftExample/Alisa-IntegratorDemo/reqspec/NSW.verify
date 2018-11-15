@@ -4,7 +4,7 @@ verification plan NSWVplan for NSW [
 	
 	claim NSW.R1 [
 		activities
-			weightlimit: Plugins.ComponentMassAnalysis()
+			weightlimit: Plugins.MassAnalysis()
 	]
 	claim NSW.R2 [
 		activities

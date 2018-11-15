@@ -5,7 +5,7 @@ verification plan ENGPlan for ENG
 
 	claim R1 [
 		activities
-			weightlimit: Plugins.ComponentMassAnalysis()
+			weightlimit: Plugins.MassAnalysis()
 	]
 
 ]

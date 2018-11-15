@@ -83,7 +83,7 @@ For details see https://wiki.sei.cmu.edu/aadl/index.php/Latency_Analysis "
 		category Quality.Mass
 		description "Perform full weight (mass) analysis. This includes net/gross weight consistency, weight budget (limit) analysis, and comparison of weight actuals (net/gross) against budget (limit)."
 	]
-//	method ComponentMassAnalysis: "Analyze the Mass (weight) of the System" [
+//	method MassAnalysis: "Analyze the Mass (weight) of the System" [
 //		java org.osate.analysis.architecture.PropertyTotals.invoke
 //		category Quality.Mass
 //		description "Perform full weight (mass) analysis. This includes net/gross weight consistency, weight budget (limit) analysis, and comparison of weight actuals (net/gross) against budget (limit)."

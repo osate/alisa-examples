@@ -4,7 +4,7 @@ verification plan RDCVplan for RDC [
 	
 	claim RDC.R1 [
 		activities
-			weightlimit: Plugins.ComponentMassAnalysis()
+			weightlimit: Plugins.MassAnalysis()
 	]
 	claim RDC.R2 [
 		activities

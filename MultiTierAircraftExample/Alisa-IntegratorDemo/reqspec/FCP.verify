@@ -5,7 +5,7 @@ verification plan FCPVplan for FCP
 	
 	claim R1 [
 		activities
-			weightlimit: Plugins.ComponentMassAnalysis()
+			weightlimit: Plugins.MassAnalysis()
 	]
 
 	claim R2 [

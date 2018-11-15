@@ -7,7 +7,7 @@ verification plan FGplan for FlightGuidance [
 			weightlimit 
 //			for FlightGuidance::FlightGuidance.subsystems
 			:
-				Plugins.ComponentMassAnalysis() 
+				Plugins.MassAnalysis() 
 //				when tier2
 	]
 	claim R2 [
@@ -37,11 +37,11 @@ verification plan FGplan for FlightGuidance [
 verification plan FGIplan for FlightGuidanceImpl [
 	claim R6_1 [
 		activities
-			flowlatency1: Plugins.EndToEndFlowLatencyAnalysis()
+			flowlatency1: Plugins.FlowLatencyAnalysis()
 	]
 	claim R6_2 [
 		activities
-			flowlatency2: Plugins.EndToEndFlowLatencyAnalysis()
+			flowlatency2: Plugins.FlowLatencyAnalysis()
 	]
 
 	claim R7 [

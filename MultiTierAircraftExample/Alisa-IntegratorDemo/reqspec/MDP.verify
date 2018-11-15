@@ -5,6 +5,6 @@ verification plan MDPPlan for MDP
 
 	claim MDP.R1  [
 		activities
-			weightlimit: Plugins.ComponentMassAnalysis()
+			weightlimit: Plugins.MassAnalysis()
 	]
 ]

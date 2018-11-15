@@ -13,17 +13,17 @@ for Integrator::FGS::Controls::ControlYokes
 			CY_WeightLimit
 	]
 
-	requirement R2: "Flow Source Latency" for fCmdInput [
+	requirement R2: "Flow Source Latency"  [
 		description "The command input latency for the control yokes subsystems
 			shall not exceed "
 			CY_FlowSourceLatency
-		value predicate #Latency == CY_FlowSourceLatency
+//		value predicate #Latency == CY_FlowSourceLatency
 	]
 
 	requirement R3: "Flow Source Direct Latency" for fCmdDInput [
 		description "The command input latency in direct mode for the control yokes subsystems
 			shall not exceed "
 			CY_Direct_FlowSourceLatency
-		value predicate #Latency == CY_Direct_FlowSourceLatency
+//		value predicate #Latency == CY_Direct_FlowSourceLatency
 	]
 ]

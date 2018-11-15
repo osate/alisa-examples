@@ -4,7 +4,7 @@ verification plan CTVplan for ControlThrottles [
 	
 	claim ControlThrottles.R1 [
 		activities
-			weightlimit: Plugins.ComponentMassAnalysis()
+			weightlimit: Plugins.MassAnalysis()
 	]
 
 	claim ControlThrottles.R2 [

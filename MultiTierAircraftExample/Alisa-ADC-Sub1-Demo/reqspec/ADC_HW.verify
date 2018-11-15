@@ -4,7 +4,7 @@ verification plan ADC_HWPlan for Supplier1.ADC_HW
 [
 	claim R1  [
 		activities
-			weightlimit: Plugins.ComponentMassAnalysis()
+			weightlimit: Plugins.MassAnalysis()
 	]
 
 	claim R2  [
