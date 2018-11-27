@@ -52,18 +52,18 @@ system ASSASystem
 				AMPSInterface: out propagation{ItemOmission,OutofRange};
 
 				OwnAircraftPosition: in propagation{ItemOmission,AircraftPositionError};
- 				ASSAAirCrewPresentation: out propagation {FalsePositiveASSAData, FalseNegativeASSAData, InaccurateASSAData};
+ 				ASSAAirCrewPresentation.AircrewTerrainHazards: out propagation {FalsePositiveASSAData, FalseNegativeASSAData, InaccurateASSAData};
  			flows
- 				falsepositives: error source ASSAAirCrewPresentation{FalsePositiveASSAData} ;
- 				falsenegatives: error source ASSAAirCrewPresentation{FalseNegativeASSAData} when {SensorLoss};
- 				inaccuratedata: error source ASSAAirCrewPresentation{InaccurateASSAData};
+ 				falsepositives: error source ASSAAirCrewPresentation.AircrewTerrainHazards{FalsePositiveASSAData} ;
+ 				falsenegatives: error source ASSAAirCrewPresentation.AircrewTerrainHazards{FalseNegativeASSAData} when {SensorLoss};
+ 				inaccuratedata: error source ASSAAirCrewPresentation.AircrewTerrainHazards{InaccurateASSAData};
  				passthrough1: error path OwnAircraftPosition{ItemOmission} 
- 				 -> ASSAAirCrewPresentation{FalseNegativeASSAData};
+ 				 -> ASSAAirCrewPresentation.AircrewTerrainHazards{FalseNegativeASSAData};
 				passthrough2: error path OwnAircraftPosition{AircraftPositionError} 
- 				 -> ASSAAirCrewPresentation{InaccurateASSAData};
+ 				 -> ASSAAirCrewPresentation.AircrewTerrainHazards{InaccurateASSAData};
  			end propagations;
  			properties
- 			EMV2::Severity => 2 applies to ASSAAirCrewPresentation;
+ 			EMV2::Severity => 2 applies to ASSAAirCrewPresentation.AircrewTerrainHazards;
 			EMV2::OccurrenceDistribution => [ ProbabilityValue => 0.0001 ; Distribution => Fixed;] applies to FailStop;
 			EMV2::Hazards => ([
     		crossreference => "N/A";
