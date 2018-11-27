@@ -23,7 +23,7 @@ with SensorErrorLibrary, EMV2, ASSAHardware;
 		SourceTracks : out data port;
 	properties
 		ACVIP::aliases => ("ASE", "AST system", "AS system");
-		JMRMIS::sensorkind => constant passive;
+		JMRMIS::sensorkind => passive;
 	annex EMV2{**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
 			use types ErrorLibrary, SensorErrorLibrary;
 			use behavior ErrorLibrary::DegradedFailStop;

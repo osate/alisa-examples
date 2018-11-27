@@ -4,6 +4,8 @@ The following examples are available to illustrate the use of incremental system
 
 **Note**: Change for SimpleControlSystem. It now uses a separate project called CyberPhysical that contains definitions for physical concepts. See below.
 
+**Note**: We keep a version of the example models consistent with stable releases of OSATE (2.3.5, 2.3.6) in seprate branches. The master branch has the most recent updates, which may require the nightly build version of OSATE to accommodate new features and bug fixes.
+
 ## SituationalAwarenessSystem
 This is the public release version of a situational Awareness System in AADL. It consists of three projects. 
 
